@@ -1,8 +1,9 @@
-h1,p{
+p {
     text-align: center;
-
-
-    
+    font-family: 'Courier New', Courier, monospace;
+    background-color: honeydew;
+    margin: 0px;
+   
 }
 
 body{
