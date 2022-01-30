@@ -1,22 +1,32 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+<html>
+<head>
     <title>PictureFilter</title>
-    <h1>Picture Filter Project</h1>
-    <hr>
-  </head>
-  <body>
-    <script src="main.js"></script>
-    <img src="https://images.unsplash.com/photo-1561803102-ad65e246740c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Picture Filter" width="500" height="333">
-    <br>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
 
-    <div>
-    <button type="button" onclick="">Choose Files</button>   
-    </div>
+<h1>Picture Filter Project</h1>
+<canvas id="canvas"></canvas>
 
 
+<h2 class="nomarginbottom">Load Image:</h2>
+<input id="file" type="file" multiple="false" accept="image/*" onchange="loadImage()">
 
-  </body>
+
+<h2 class="nomarginbottom">Choose Filter:</h2>
+<div class="filters">
+	<input id="btnRed" type="button" value="Red Filter" onclick="makeRed()">
+	<input id="btnRainbow" type="button" value="Rainbow Filter" onclick="makeRainbow()">
+	<input id="btnGrey" type="button" value="Greyscale Filter" onclick="makeGrey()">
+</div>
+
+
+<h2 class="nomarginbottom">Reset Image Filter</h2>
+<input id="btnReset" type="button" value="Reset Image" onclick="resetImage()">
+
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+<script src="main.js"></script>
+</body>
 </html>
