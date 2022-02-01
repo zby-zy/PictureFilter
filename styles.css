@@ -1,19 +1,48 @@
+@font-face {
+	font-family: myFont;
+	src: url(Dongle-Regular.ttf);
+  }
+@font-face {
+	font-family: MyFont2;
+	src: url(Dongle-Light.ttf);
+}  
 
 h1{
-    font-family: 'Times New Roman', Times, serif;
+
+	font-family: myFont;
+	font-size: 85px;
+	margin: 0;
+	padding-left: 12px;
+	border-left: 12px solid #a50000;
+    background-color: rgb(230, 48, 48);
+	color: black;
+
+
+}
+
+h2{
+	font-family: myFont2;
+	font-size: 45px;
+	margin: 0;
+	color: black;
+
 }
 
 
 body {
-	background: honeydew;
+	background: rgb(66, 63, 63);
 	font-family: arial;
 	font-size: 16px;
 	color: #333;
 }
 
 #canvas {
-	border: 1px solid;
-	width: 300px;
+	border: 3px solid;
+	width: 500px;
+	background-color: white;
+
+	
+
 }
 
 input {
@@ -22,14 +51,18 @@ input {
 }
 
 input:not([type="file"]) {
-	background: rgb(202, 226, 164);
+	background: rgb(230, 48, 48);
 	border: 0;
 	padding: 8px 20px;
 	cursor: pointer;
+	border-radius: 4px;
+	font-family: MyFont2;
+	font-size: 30px;
 }
 
 input:not([type="file"]):hover {
-	background: #C79292;
+	background: #a50000;
+	
 }
 
 .filters input {
