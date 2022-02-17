@@ -39,7 +39,7 @@ input{
 	display: block;
 	margin-top: 10px;
 }
-input:not([type="file"]) {
+input:not([type="file"]){
 	background: rgb(230, 48, 48);
 	border: 0;
 	padding: 8px 20px;
@@ -48,12 +48,12 @@ input:not([type="file"]) {
 	font-family: MyFont2;
 	font-size: 30px;
 }
-input:not([type="file"]):hover {
+input:not([type="file"]):hover{
 	background: #a50000;	
 }
-.filters input {
+.filters input{
 	display: inline-block;
 }
-.nomarginbottom {
+.nomarginbottom{
 	margin-bottom: 0;
 }
