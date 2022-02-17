@@ -2,12 +2,11 @@
 	font-family: myFont;
 	src: url(Dongle-Regular.ttf);
 }
-@font-face {
+@font-face{
 	font-family: MyFont2;
 	src: url(Dongle-Light.ttf);
 }  
 h1{
-
 	font-family: myFont;
 	font-size: 85px;
 	margin: 0;
